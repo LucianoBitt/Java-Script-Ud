@@ -1,3 +1,1 @@
-console.log();
-console.log();
-console.log();
+console.log(415 - "Não é número"); /* NaN - Not a Number */
