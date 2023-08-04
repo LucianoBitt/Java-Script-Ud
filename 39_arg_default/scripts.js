@@ -4,7 +4,7 @@ function repetirFrase(frase, n = 5) {
     }
 }
 
-repetirFrase("Testendo", 5);
+repetirFrase("Testando", 5);
 repetirFrase("Cinco vezes.");
 
 
