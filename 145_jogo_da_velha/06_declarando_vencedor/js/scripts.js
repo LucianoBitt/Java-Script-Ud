@@ -195,3 +195,20 @@ function checkWinCondition() {
         console.log('Deu VELHA!');
     }
 }
+
+// limpa o jogo, declara o vencedor e atualiza o placar
+function declareWinner(winner) {
+    let scoreboardx = document.querySelector("#scoreboard-1");
+    let scoreboardy = document.querySelector("#scoreboard-2");
+    let msg = '';
+
+    if (winner == 'x') {
+        scoreboardx.textContent = paserInt(scoreboardx.textContent) + 1;
+        msg = "O Jogador 1 VENCEU!";
+    } else if (winner == 'y') {
+        scoreboardy.textContent = paserInt(scoreboardy.textContent) + 1;
+        msg = "O Jogador 2 VENCEU!";
+    } else {
+        msg = "Deu VELHA!"
+    }
+}
